@@ -21,6 +21,8 @@ To prepare the data for a Random Forest model, I followed these steps:
    Used `get_dummies()` to convert categorical features into numeric ones — ensuring compatibility with machine learning algorithms.
 
 Modeling Steps 🤖
+
+
 I built three versions of the model:
 
 Default model – just using the default parameters
@@ -35,6 +37,7 @@ For each version, I evaluated the model using Train and Test R² scores to compa
 
 Univariate Analysis 📊
 
+
 I performed univariate R² analysis on the optimized model to see how much each feature contributes on its own.
 
 ✅ I kept only the features where:
@@ -46,6 +49,8 @@ The feature didn’t cause overfitting (i.e., the gap between train and test R²
 This helped me focus on the most stable and meaningful predictors 💡
 
 Final Model 🧩
+
+
 For the final model, I used only the top-performing variables — the ones that had the biggest impact on model accuracy.
 
 ✅ This helped simplify the model while keeping performance strong and stable.
